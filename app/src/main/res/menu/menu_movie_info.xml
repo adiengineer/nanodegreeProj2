@@ -3,4 +3,10 @@
     tools:context="com.example.aditya.nanodegreeproj1.MovieInfoAct">
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" android:showAsAction="never" />
+
+    <!-- <item android:id="@+id/add_button" android:title="@string/add_movie"
+        android:showAsAction="ifRoom" />
+
+    <item android:id="@+id/delete_button" android:title="@string/delete_movie"
+        android:showAsAction="ifRoom" /> -->
 </menu>

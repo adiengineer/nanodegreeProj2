@@ -1,58 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    android:background="#eeeeee">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-<RelativeLayout
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:id="@+id/rellayout">
-
-
-    <ImageView
+    <fragment
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/poster"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="10dp"
-        android:padding="20dp" />
+        android:layout_height="match_parent"
+        android:id="@+id/detailsFragment"
+        android:name="com.example.aditya.nanodegreeproj1.DetailsFragment"/>
+
+    <!-- check if width wraping works -->
+    <!-- for standard screen only one fragment for the grid -->
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Small Text"
-        android:id="@+id/rating"
-        android:textAlignment="center"
-        android:gravity="center"
-        android:paddingBottom="20dp"
-        android:layout_below="@+id/poster"
-        android:layout_centerHorizontal="true" />
+</LinearLayout>
 
-
-    <View
-        android:layout_width="fill_parent"
-        android:layout_height="2dp"
-        android:background="#c0c0c0"
-        android:layout_below="@+id/rating"/>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-
-        android:id="@+id/plot"
-
-        android:padding="20dp"
-
-        android:layout_below="@+id/rating"
-        android:layout_centerHorizontal="true" />
-
-
-
-</RelativeLayout>
-</ScrollView>

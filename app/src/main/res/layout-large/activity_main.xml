@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <fragment
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_weight="0.5"
         android:id="@+id/gridFragment"
         android:name="com.example.aditya.nanodegreeproj1.GridViewFragment"/>
 
     <!-- check if width wraping works -->
-    <!-- for standard screen only one fragment for the grid -->
 
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:id="@+id/detailsFragment"
+        android:name="com.example.aditya.nanodegreeproj1.DetailsFragment"/>
 
 </LinearLayout>
 
+<!--Todo: add fragment to the main activity layout of standard screen size -->

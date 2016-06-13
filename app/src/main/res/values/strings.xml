@@ -5,6 +5,8 @@
     <string name="action_settings">Settings</string>
     <string name="setting_1">Most popular </string>
     <string name="setting_2">Top rated </string>
+    <string name="add_movie">Add movie! </string>
+    <string name="delete_movie"> Delete </string>
     <string name="title_activity_movie_info">MovieInfoAct</string>
-
+    <string name="setting_3">Favourites</string>
 </resources>

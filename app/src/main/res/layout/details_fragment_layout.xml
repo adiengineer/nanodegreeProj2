@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:id="@+id/rellayout">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/poster"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+
+            android:padding="20dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=" "
+            android:id="@+id/rating"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:layout_below="@+id/poster"
+            android:layout_centerHorizontal="true" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"
+            android:layout_below="@+id/rating"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:background="#ffffff"
+            android:id="@+id/plot"
+
+            android:padding="20dp"
+            android:clickable="false"
+            android:layout_below="@+id/rating"
+            android:layout_centerHorizontal="true"
+            android:onClick="expandPlot" />
+
+      <!--  <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_below="@+id/plot"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/expandarrow"/> -->
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/plot"
+            android:id="@+id/plospa"
+            android:background="#ffffff"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/trailerdisplay"
+            android:layout_below="@+id/plospa"
+            android:textAlignment="gravity"
+            >
+        </ListView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/seperator"
+            android:layout_below="@id/trailerdisplay"
+            android:background="#ffffff"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/favourite_button"
+            android:src="@drawable/favourites_icon"
+            android:layout_below="@+id/seperator"
+            android:layout_toLeftOf="@+id/rating"
+            android:layout_toStartOf="@+id/rating" />
+
+        <ListView
+          android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/reviewdisplay"
+            android:layout_below="@+id/bottom_space"
+            android:textAlignment="gravity"
+            >
+        </ListView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/reviewdisplay"/>
+
+       <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/bottom_space"
+            android:layout_below="@id/favourite_button"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/delete_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/delete_icon"
+            android:layout_below="@+id/seperator"
+            android:layout_toRightOf="@+id/rating"
+            android:layout_toEndOf="@+id/rating" />
+    </RelativeLayout>
+</ScrollView>
+
+<!--layout for the details fragment -->
